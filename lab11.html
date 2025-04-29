@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            javascript
+        </title>
+    </head>
+    <body>
+    
+        <p id="add">Show Addition</p>
+        <button onclick='changeText()'>Result</button>
+    </body>
+    <script>
+       let  a=5;
+       let  b=6;
+        b=a+b;
+       let isChange=1;
+       function changeText(){
+        
+        if(isChange==1){
+        document.getElementById("add").innerHTML=`Additon of two number = ${b}`;
+        }
+        else if(isChange==2){
+            document.getElementById("add").innerHTML="Asif Ahmed"; 
+        }
+        else if(isChange==3){
+            document.getElementById("add").innerHTML="Additon Edition";
+            }
+            else if(isChange==4){
+                document.getElementById("add").innerHTML="TAJ"; 
+            }
+        isChange=isChange+1;
+    }
+
+    </script>
+</html>
